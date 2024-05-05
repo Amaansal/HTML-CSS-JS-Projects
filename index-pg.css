@@ -1,0 +1,53 @@
+.button-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  column-gap: 200px;
+}
+
+a>div{
+  height: 500px;
+  width: 500px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+div>h1{
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+
+.information{
+  display: flex;
+  height: 500px;
+  margin-bottom: -300px;
+  align-items: center;
+  justify-content: center;
+}
+.information h1{
+  font-size: 50px;
+}
+
+#real-estate{
+  background-image: url(Real-estate-web/house-pics/house1/exterior.jpg);
+}
+#calculator{
+  background-image: url(calculator-thumbnail.PNG);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 50px;
+}
+#kbd-web{
+  background-image: url(kbd-web-pic.PNG);
+  background-size: cover;
+  
+}

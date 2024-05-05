@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+
+<body>
+  <main>
+    <div class="output js-output-area">   </div>
+
+    <div class="grid">
+      <button onclick="updateOutput(1); console.log(calculation);"> 1 </button>
+      <button onclick="updateOutput(2); console.log(calculation);">2</button>
+      <button onclick="updateOutput(3); console.log(calculation);">3</button>
+      <button onclick="calculate(); console.log(calculation);">&equals;</button>
+
+      <button onclick="del(false); console.log(calculation);">&larrhk;</button>
+      <button onclick="updateOutput(4); console.log(calculation);">4</button>
+      <button onclick="updateOutput(5); console.log(calculation);">5</button>
+      <button onclick="updateOutput(6); console.log(calculation);">6</button>
+
+      <button onclick="operator('/'); console.log(calculation);"> &divide;</button>
+      <button onclick="operator('*'); console.log(calculation);">&times;</button>
+      <button onclick="updateOutput(7); console.log(calculation);">7</button>
+      <button onclick="updateOutput(8); console.log(calculation);">8</button>
+      <button onclick="updateOutput(9); console.log(calculation);">9</button>
+
+      <button onclick="operator('+'); console.log(calculation);"> &plus; </button>
+      <button onclick="operator('-'); console.log(calculation);"> &minus; </button>
+      <button onclick="del(true);">AC</button>
+      <button onclick="updateOutput(0); console.log(calculation);">0</button>
+
+
+    </div>
+  </main>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
