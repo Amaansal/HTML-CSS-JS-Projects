@@ -1,0 +1,97 @@
+.header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
+  display: flex;
+  justify-content: space-between;
+  background-color: #DEF2F1;
+  background-image: linear-gradient( white,#DEF2F1, #c6f3f1  ); 
+  box-shadow: 0px 1.5px 4px rgba(0,0,0, 0.3);
+   
+}
+.logo-sec{
+  flex: 0.1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#logo{
+  width: 100px;
+  cursor: pointer;
+}
+
+.middle-sec{
+  flex: 1fr;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.middle-btn{
+  padding: 10px 0px;
+  width: 80px;
+  color: black;
+  background-color: rgba(0,0,0,0);
+  border: none ;
+  border-radius: 5px;
+  position: relative;
+  
+  font:  1.2em "Arial";
+}
+.middle-sec *:after{
+  content: "";
+  position: absolute;
+  background-color: rgba(0,0,0, 0.5);
+  width: 2px;
+  height: 40px;
+  left: -10%;
+  align-self: stretch;
+  transform: translateY(-20%);
+  pointer-events: none;
+}
+.middle-btn:hover{
+  color: rgb(0, 213, 255);
+}
+
+.right-sec{
+  flex:0.2;
+  display:flex;
+  
+  flex-direction: column;
+  justify-content:center;
+  align-items: end;
+  min-width: 125px;
+  padding-right: 20px;
+
+  row-gap: 10px;
+
+}
+.social-logo{
+  cursor: pointer;
+  height: 30px;
+}
+
+#gmail-logo{
+  width: 33px;
+  height: auto;
+}
+#phone-logo{
+  width:35px ;
+  height: auto;
+  transform: translateY(5%);
+  
+}
+
+@media screen and (min-width:2390px) {
+  .header{height: 130px;}
+  .middle-sec *:after{
+    height: 60px;
+  }
+  .middle-sec{
+    font-size: 25px;
+  }
+}

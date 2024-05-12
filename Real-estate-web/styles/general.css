@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+img{
+  -webkit-user-drag: none;
+}
+body{ 
+  height: 5000px;
+  padding: 100px 0 0 0;
+  margin: 0;
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+button{
+  cursor: pointer;
+}
+
+h1{
+  font-size: 30px;
+  font-family: "Kanit";
+  font-weight: 500;
+}
+
+h2{
+  font-weight: 500;
+}

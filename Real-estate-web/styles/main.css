@@ -1,0 +1,93 @@
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.house-picture{
+  background-color:  white;
+  border: solid white 40px;
+}
+.house-info{
+  background-color: #3AAFA9;
+  padding: 50px 40px;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.house-info>*{
+  margin-top: 10px;
+}
+.house-info>p{
+  margin-top: 40px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: middle;
+  align-items: center;
+  position: sticky;
+  top: 100px;
+}
+.house-pic{
+  width: 100%;
+  background-color: #C2B9B0;
+  box-sizing: content-box;
+}
+
+.interior-pic{
+  width: 100%;
+}
+.pic-showcase{
+  margin-top: 0%;
+}
+
+ @media screen and (min-width: 1400px) {
+  section{
+    grid-template-columns: 1fr 1.3fr;
+  } 
+}
+
+@media screen and (min-width: 1800px) {
+  .house-pic{
+    width: 90%;
+  }
+}
+@media screen and (min-width:2000px ) {
+  .house-pic{
+    width: 75%;
+  }
+} 
+@media screen and (min-width:2390px) {
+  .house-pic{
+    width: 65%;
+  }
+  .house-info>p{
+    text-align: center;
+    font-size: 35px;
+    margin: 4% 0;
+  }
+  .interior-pic{
+    width: 80%;
+  }
+  .container{
+    top: 150px;
+  }
+}
+@media screen and (max-width:815px) {
+  section{
+    display: block;
+  }
+  .house-info{
+    font-size: 15px;
+  }
+  
+    
+
+  
+}
+
+
+
+
