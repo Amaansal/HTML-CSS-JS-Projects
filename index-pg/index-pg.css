@@ -12,7 +12,7 @@ a>div{
   border: none;
   display: flex;
   justify-content: center;
-  color: black;
+  color: white;
   text-decoration: none;
   text-align: center;
 }
@@ -38,16 +38,16 @@ a:hover{
 }
 
 #real-estate{
-  background-image: url(Real-estate-web/house-pics/house1/exterior.jpg);
+  background-image: url(../Real-estate-web/house-pics/house1/exterior.jpg);
 }
 #calculator{
-  background-image: url(calculator-thumbnail.PNG);
+  background-image: url(./index-pg-imgs/calculator-thumbnail.PNG);
   background-size: cover;
   background-position-x: center;
   background-position-y: 50px;
 }
 #kbd-web{
-  background-image: url(kbd-web-pic.PNG);
+  background-image: url(./index-pg-imgs/kbd-web-pic.PNG);
   background-size: cover;
   
 }
