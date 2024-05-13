@@ -1,0 +1,56 @@
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 9;
+  pointer-events: all;
+  transition: opacity 200ms;
+  opacity: 0;
+}
+#pop-up.active,
+#overlay.active{
+  scale: 1; 
+  opacity: 1;
+}
+
+#pop-up{
+  z-index: 10;
+  background: rgb(140, 201, 255);
+  position: fixed;
+  left: 40%;
+  top: 30%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: scale 200ms;
+  border: 3px white solid;
+
+  scale: 0;
+
+}
+#top-row p,
+#top-row button{
+  display: inline-block;
+}
+#top-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: white 2px solid;
+  padding: 10px ;
+  
+}
+#close-pop-up{
+  font-size: 30px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color: black;
+}
+#info{
+  padding: 15px;
+}
