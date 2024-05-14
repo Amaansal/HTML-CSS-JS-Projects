@@ -33,7 +33,7 @@ function del(cond) {
 
 
 function calculate() {
-  const result = eval(calculation);
+  let result = eval(calculation);
   if (!Number.isInteger(result)) result= result.toFixed(3);
 
   outputArea.innerHTML = result;
