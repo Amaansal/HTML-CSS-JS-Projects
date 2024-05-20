@@ -33,6 +33,7 @@ function del(cond) {
 
 
 function calculate() {
+  
   let result = eval(calculation);
   if (!Number.isInteger(result)) result= result.toFixed(3);
 
